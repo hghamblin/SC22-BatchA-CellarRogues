@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Instagram Caption Generator - Home</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="static/img/topbartext.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Overview</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="#about">The Process</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">The Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+        </header>
+        <!-- Services-->
+          <section class="page-section" id="services">
+            <div class="container">
+              <div class="text-center">
+                <h2 class="text-black section-heading text-uppercase">OVERVIEW</h2>
+                <p class ="text-muted">
+                  Input a prompt to generate an entertaining caption for social media!
+                </p>
+                </div>
+                <div class="text-center">
+                <a class="btn btn-primary btn-xl text-uppercase" href={{ url_for('results')}}>Click here to try our generator!</a><br><br><br>
+            </div>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase"></h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-photo-film fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Data Sets</h4>
+                        <p class="text-muted">During the creation of this generator our team used various data sets to create these unique captions. The tow main ones used are a poems and other users Instagram captions. We wanted to make sure our captions are as human as possible so people couldn't tell the difference if it was AI generated. Real Instagram captions from other users help achieve that by being able to express all kinds of emotion. The poem data sets helps to by being able to express the poetic side some captions include.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-mountain-sun fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Learning Curves</h4>
+                        <p class="text-muted">Over the three weeks of developing this generator many problems occurred. Both profanity filters and appropriate emojis were a challenge. We didin't want our generator to include inappropriate language since we want our product to be age appropriate and be used by anyone. Same applies to the emojis we didn't want a caption to have a emoji that didn't fit well with the mood. If the caption is intended to be sad it wouldn't make sense for their to be a happy face. With quick thinking and hark work both of these problems were resolved. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-message fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Unique Features</h4>
+                        <p class="text-muted">The team wanted to have fun and unique features to ensure the best experience users can have. Using our data sets we divided them into two separate groups. The Instagram captions, and poems are used in the first one, while the lyrics with the previous two are added to the funny one. We also wanted to include both appropriate captions and emojis based off the users caption, that can be toggled on and off. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+<section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-black section-heading text-uppercase">THE PROCESS</h2>
+                    <h3 class="section-subheading text-muted">The Cellar Rogue's journey to building their very own, working AI Natural Language Processing model.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://cdn.iconscout.com/icon/free/png-256/python-3627896-3029122.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="text-black timeline-heading">
+                                <h4>June 6 - June 10</h4>
+                                <h4 class="subheading">Week 1</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The first week of AI camp was used as an introduction to the coding language, python. Students attended lectures in the morning and afternoon about aspects of coding and python, such as preprocessing, machine learning, neural networks, etc. Students practiced coding by working on mini projects in breakout rooms with their groups. The Cellar Rogues also brainstormed ideas of models they wanted to create and decided upon a caption generator that would be based off of corresponding data sets they found. On June 10, the Cellar Rogues presented their product spec/model outline and received positive responses! </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://png.pngtree.com/png-vector/20200312/ourlarge/pngtree-modern-flat-design-concept-of-programmers-at-work-concept-software-development-png-image_2157879.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="text-black timeline-heading">
+                                <h4> June 13 - June 17 </h4>
+                                <h4 class="subheading">Week 2</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">During the second week of AI camp, the Cellar Rogues began to develop their model. They continued to attend lectures everyday while usually spending the afternoon on writing the code for the model. They discussed what they wanted —and didn't want— their model to include. When preprocessing their data, the Cellar Rogues decided to exclude profanity,  names, @'s, etc. By Wednesday, the Cellar Rogues had a working model! They spent the rest of the week fine tuning the model.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://png.pngtree.com/png-vector/20200312/ourlarge/pngtree-modern-flat-design-concept-of-web-development-with-characters-on-screen-png-image_2157892.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="text-black timeline-heading">
+                                <h4>June 20 - June 24 </h4>
+                                <h4 class="text-black subheading">Week 3</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">During the third week of AI Camp, the Cellar Rogues started developing the website for their model.  The Cellar Rogues collaborated to choose a bootstrap theme and aesthetic for the website and discussed what they should include on the website. The Cellar Rogues spent June 21-22 working on the website and adding finishing touches to the model. On June 23, the Cellar Rogues prepared a presentation slideshow for their model and created a demo video. On June 24, the Cellar Rogues finished their model and website and presented it to AI camp! </p></div>
+ </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://png.pngtree.com/png-vector/20200319/ourlarge/pngtree-modern-flat-design-concept-of-business-management-with-characters-planning-a-png-image_2158002.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class=" timeline-heading">
+                                <h4>Future Goals & Ambitions</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">After developing a world class, high-tech natural language processing model, the Cellar Rogues have bright ideas for their future. Together, the Cellar Rogues hope to bring this model to Shark Tank before  eventually being bought out by Instagram and pursuing their goals. Matthew, inventor of machine learning, hopes to become the next Bill Gates. Dr. Zalea, MD will pursue her doctorate in psychology while Ronok hopes to monopolize the Cryptocurrency industry. Anvita wants to become the next CEO of Canva and Ivy wants to create her own brand of instant noodles. Emanuele wants to open his own dog cafe in Italy and Instructor Graham Hamblin wants to retire from inventing and eventually die of old age.  </p></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+          <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">The Cellar Rogues</h2>
+                    <h3 class="section-subheading text-muted">The team that manifested the AI Caption generator.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/img/team/lolo.png" alt="..." />
+                            <h4>Emanuele Montini</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/LeleStudent" target="_blank" aria-label="Emanuele Montini Github Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/img/team/ronok.png" alt="..." />
+                            <h4>Ronok Tanvir</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/ronkbonk" target="_blank" aria-label="Ronok Tanvir github Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/img/team/zalea.png" alt="..." />
+                            <h4>Zalea Nunes</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/Za1ea" target="_blank" aria-label="Zalea N Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/img/team/matthew.png" alt="..." />
+                            <h4>Matthew Lee</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/EnderDemonPlayz" target="_blank"  aria-label="Matthew Lee github Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/img/team/anvita1.png" alt="..." />
+                            <h4>Anvita Vengala</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/anvita-v" target="_blank"  aria-label="Anvita Vengala github Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/img/team/ivy.png" alt="..." />
+                            <h4>Ivy Huang</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/eyeev" target="_blank"  aria-label="Ivy Huang github Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Tomorrow is a mystery, yesterday was history, and today is a gift. That is why it is called the present.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Cellar Rogues 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/hghamblin/SC22-BatchA-Cellar-Rogues-Caption-Generator" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a><!--  -->
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/1.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
